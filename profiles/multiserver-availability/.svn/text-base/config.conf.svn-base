@@ -1,0 +1,129 @@
+#Host and its log location
+SERVICE="rps"
+SEARCH_INDEX="product"
+SEARCH_CLUSTER="cluster1"
+INSTANCE="1"
+FOOTER_FQN=${SERVICE}_${SEARCH_INDEX}_${SEARCH_CLUSTER}_${INSTANCE}
+
+## Solr topshard
+HOST[0]="dev-agspix201zd"
+COMPONENT_NAME[0]="Solr"
+COMPONENT_ID[0]="topshard"
+COMPONENT_LOG[0]="/home/ngsuser/var/log/solr/solr-${FOOTER_FQN}/8983/solr.log"
+TEMP_FOLDER[0]="/home/ngsuser/log-collection/solr"
+## Solr shard1_1
+HOST[1]="dev-agspix201zd"
+COMPONENT_NAME[1]="Solr"
+COMPONENT_ID[1]="shard1_1"
+COMPONENT_LOG[1]="/home/ngsuser/var/log/solr/solr-${FOOTER_FQN}/8987/solr.log"
+TEMP_FOLDER[1]="/home/ngsuser/log-collection/solr"
+## Solr shard1_2
+HOST[2]="dev-agspix201zd"
+COMPONENT_NAME[2]="Solr"
+COMPONENT_ID[2]="shard1_2"
+COMPONENT_LOG[2]="/home/ngsuser/var/log/solr/solr-${FOOTER_FQN}/8993/solr.log"
+TEMP_FOLDER[2]="/home/ngsuser/log-collection/solr"
+## Solr topshard2
+HOST[3]="dev-agspix201zd"
+COMPONENT_NAME[3]="Solr"
+COMPONENT_ID[3]="topshard2"
+COMPONENT_LOG[3]="/home/ngsuser/var/log/solr/solr-${FOOTER_FQN}/8985/solr.log"
+TEMP_FOLDER[3]="/home/ngsuser/log-collection/solr"
+
+## Cassandra cass_qu1
+HOST[4]="dev-agspqu201zd"
+COMPONENT_NAME[4]="Cassandra"
+COMPONENT_ID[4]="cass_qu1"
+COMPONENT_LOG[4]="/home/ngsuser/var/log/cassandra-ccm/multi3/node0/system.log"
+TEMP_FOLDER[4]="/home/ngsuser/log-collection/cassandra"
+## Cassandra cass_qu2
+HOST[5]="dev-agspqu201zd-v1"
+COMPONENT_NAME[5]="Cassandra"
+COMPONENT_ID[5]="cass_qu2"
+COMPONENT_LOG[5]="/home/ngsuser/var/log/cassandra-ccm/multi3/node1/system.log"
+TEMP_FOLDER[5]="/home/ngsuser/log-collection/cassandra"
+## Cassandra cass_qu3
+HOST[6]="dev-agspqu201zd-v2"
+COMPONENT_NAME[6]="Cassandra"
+COMPONENT_ID[6]="cass_qu3"
+COMPONENT_LOG[6]="/home/ngsuser/var/log/cassandra-ccm/multi3/node2/system.log"
+TEMP_FOLDER[6]="/home/ngsuser/log-collection/cassandra"
+## Cassandra cass_da1
+HOST[7]="dev-agspds201zd"
+COMPONENT_NAME[7]="Cassandra"
+COMPONENT_ID[7]="cass_da1"
+COMPONENT_LOG[7]="/home/ngsuser/var/log/cassandra-ccm/multi3/node0/system.log"
+TEMP_FOLDER[7]="/home/ngsuser/log-collection/cassandra"
+## Cassandra cass_da2
+HOST[8]="dev-agspds201zd-v1"
+COMPONENT_NAME[8]="Cassandra"
+COMPONENT_ID[8]="cass_da2"
+COMPONENT_LOG[8]="/home/ngsuser/var/log/cassandra-ccm/multi3/node1/system.log"
+TEMP_FOLDER[8]="/home/ngsuser/log-collection/cassandra"
+## Cassandra cass_da3
+HOST[9]="dev-agspds201zd-v2"
+COMPONENT_NAME[9]="Cassandra"
+COMPONENT_ID[9]="cass_da3"
+COMPONENT_LOG[9]="/home/ngsuser/var/log/cassandra-ccm/multi3/node2/system.log"
+TEMP_FOLDER[9]="/home/ngsuser/log-collection/cassandra"
+
+## Zookeeper zk1
+HOST[10]="dev-agspadm201zd"
+COMPONENT_NAME[10]="Zookeeper"
+COMPONENT_ID[10]="zk1"
+COMPONENT_LOG[10]="/home/ngsuser/var/log/zookeeper/zookeeper-1/zookeeper.log"
+TEMP_FOLDER[10]="/home/ngsuser/log-collection/zookeeper"
+## Zookeeper zk2
+HOST[11]="dev-agspapi201zd"
+COMPONENT_NAME[11]="Zookeeper"
+COMPONENT_ID[11]="zk2"
+COMPONENT_LOG[11]="/home/ngsuser/var/log/zookeeper/zookeeper-1/zookeeper.log"
+TEMP_FOLDER[11]="/home/ngsuser/log-collection/zookeeper"
+## Zookeeper zk3
+HOST[12]="dev-agspix201zd"
+COMPONENT_NAME[12]="Zookeeper"
+COMPONENT_ID[12]="zk3"
+COMPONENT_LOG[12]="/home/ngsuser/var/log/zookeeper/zookeeper-1/zookeeper.log"
+TEMP_FOLDER[12]="/home/ngsuser/log-collection/zookeeper"
+
+## INDEXER indexer1
+HOST[13]="dev-agspds201zd"
+COMPONENT_NAME[13]="Indexer"
+COMPONENT_ID[13]="indexer1"
+COMPONENT_LOG[13]="/home/ngsuser/var/log/indexer/indexer-${FOOTER_FQN}/indexer.log"
+TEMP_FOLDER[13]="/home/ngsuser/log-collection/indexer"
+## INDEXER indexer2
+HOST[14]="dev-agspqu201zd"
+COMPONENT_NAME[14]="Indexer"
+COMPONENT_ID[14]="indexer2"
+COMPONENT_LOG[14]="/home/ngsuser/var/log/indexer/indexer-${FOOTER_FQN}/indexer.log"
+TEMP_FOLDER[14]="/home/ngsuser/log-collection/indexer"
+
+## Catalina
+HOST[15]="dev-agspapi201zd"
+COMPONENT_NAME[15]="SearchAPI"
+COMPONENT_ID[15]="searchapi1"
+COMPONENT_LOG[15]="/home/ngsuser/var/log/searchapi/searchapi-${FOOTER_FQN}/catalina.out"
+TEMP_FOLDER[15]="/home/ngsuser/log-collection/catalina"
+
+## Httpgateway
+HOST[16]="dev-agspfdapi201zd"
+COMPONENT_NAME[16]="Httpgateway"
+COMPONENT_ID[16]="dapcy1"
+COMPONENT_LOG[16]="/home/ngsuser/var/log/searchapi/searchapi-${FOOTER_FQN}/catalina.out"
+TEMP_FOLDER[16]="/home/ngsuser/log-collection/catalina"
+
+## Autotest
+HOST[17]="localhost"
+COMPONENT_NAME[17]="Autotest"
+COMPONENT_ID[17]="autotest"
+COMPONENT_LOG[17]="../../../../../gsp-autotest.log"
+TEMP_FOLDER[17]="collected-log/temp"
+
+#Testcase profile
+#TEST_NAME="CASE1"
+TEST_SERVER="parnurzeal@192.168.101.1"
+TEST_SERVER_LOG_LOCATION="collected-log"
+
+#Client profile (at component server side)
+CSCRIPT_NAME="log_sender.sh"

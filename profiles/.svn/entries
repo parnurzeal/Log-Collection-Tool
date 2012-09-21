@@ -1,0 +1,40 @@
+10
+
+dir
+5586
+https://dev-wsvn102d.db.rakuten.co.jp/usvn/ngsearch-gsp/branches/GSP-1.1.x/autotest2/src/main/resources/scripts/log_collection_tool/profiles
+https://dev-wsvn102d.db.rakuten.co.jp/usvn/ngsearch-gsp
+
+
+
+2012-09-20T07:23:09.568059Z
+5586
+watanavekint01
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4907b6b2-fc31-11df-ba22-b7bfd5154c14
+
+multiserver
+dir
+
+singleserver-ci
+dir
+
+singleserver-vm
+dir
+
+multiserver-availability
+dir
+
