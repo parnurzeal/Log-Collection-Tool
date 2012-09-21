@@ -1,0 +1,1 @@
+Log-Collection-Tool is a pure shell script, distributed log collection tool. It works by sending tiny shell script, as we named it "log agent", to every targeted log in client. Then, sending back the created log by agent to its main server.
